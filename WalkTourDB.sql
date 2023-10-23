@@ -12,9 +12,9 @@ CREATE TABLE WalkTourDB.`table1` (
 -- Table WalkTourDB.`enderecos`
 -- -----------------------------------------------------
 CREATE TABLE WalkTourDB.`enderecos` (
-  `endereco_id` INT NOT NULL,
+  `endereco_id` INT NOT NULL AUTO_INCREMENT,
   `cep` VARCHAR(45) NOT NULL,
-  `cidade` VARCHAR(45) NOT NULL,''
+  `cidade` VARCHAR(45) NOT NULL,
   `estado` VARCHAR(45) NOT NULL,
   `pais` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`endereco_id`));
@@ -24,7 +24,7 @@ CREATE TABLE WalkTourDB.`enderecos` (
 -- Table WalkTourDB.`eventos`
 -- -----------------------------------------------------
 CREATE TABLE WalkTourDB.`eventos` (
-  `id_evento` INT NOT NULL,
+  `id_evento` INT NOT NULL AUTO_INCREMENT,
   `dia_inicio` DATE NOT NULL,
   `dia_fim` DATE NOT NULL,
   `hora_inicio` TIME NOT NULL,
@@ -42,11 +42,11 @@ CREATE TABLE WalkTourDB.`eventos` (
 -- Table WalkTourDB.`pontos_tur`
 -- -----------------------------------------------------
 CREATE TABLE WalkTourDB.`pontos_tur` (
-  `ponto_id` INT NOT NULL,
+  `ponto_id` INT NOT NULL AUTO_INCREMENT,
   `hora_abre` TIME NOT NULL,
   `hora_fecha` TIME NOT NULL,
   `preco` FLOAT NOT NULL,
-  `endereco_id` INT NOT NULL,
+  `endereco_id` INT NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`ponto_id`, `endereco_id`),
   CONSTRAINT `fk_pontos_tur_enderecos1`
     FOREIGN KEY (`endereco_id`)
@@ -57,7 +57,7 @@ CREATE TABLE WalkTourDB.`pontos_tur` (
 -- Table WalkTourDB.`hospedes`
 -- -----------------------------------------------------
 CREATE TABLE WalkTourDB.`hospedes` (
-  `id_hospede` INT NOT NULL,
+  `id_hospede` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NOT NULL,
   `nome_social` VARCHAR(45) NOT NULL,
   `dt_nasc` DATE NOT NULL,
@@ -69,7 +69,7 @@ CREATE TABLE WalkTourDB.`hospedes` (
 -- Table WalkTourDB.`hospedagens`
 -- -----------------------------------------------------
 CREATE TABLE WalkTourDB.`hospedagens` (
-  `id_hospedagem` INT NOT NULL,
+  `id_hospedagem` INT NOT NULL AUTO_INCREMENT,
   `forma_pag` VARCHAR(45) NOT NULL,
   `data_in` DATE NOT NULL,
   `data_out` DATE NOT NULL,
@@ -81,7 +81,7 @@ CREATE TABLE WalkTourDB.`hospedagens` (
 -- Table WalkTourDB.`modelo_quarto`
 -- -----------------------------------------------------
 CREATE TABLE WalkTourDB.`modelo_quarto` (
-  `tipo_id` INT NOT NULL,
+  `tipo_id` INT NOT NULL AUTO_INCREMENT,
   `nome_modelo` VARCHAR(45) NOT NULL,
   `qtd_banheiro` INT NOT NULL,
   `qtd_camas` INT NOT NULL,
@@ -94,10 +94,10 @@ CREATE TABLE WalkTourDB.`modelo_quarto` (
 -- Table WalkTourDB.`quarto`
 -- -----------------------------------------------------
 CREATE TABLE WalkTourDB.`quarto` (
-  `num_quarto` INT NOT NULL,
+  `num_quarto` INT NOT NULL AUTO_INCREMENT,
   `hora_limpeza` TIME NOT NULL,
   `servico_quarto` TINYINT NOT NULL,
-  `tipo_id` INT NOT NULL,
+  `tipo_id` INT NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`num_quarto`, `tipo_id`),
   CONSTRAINT `fk_quarto_modelo_quarto1`
     FOREIGN KEY (`tipo_id`)
@@ -108,10 +108,10 @@ CREATE TABLE WalkTourDB.`quarto` (
 -- Table WalkTourDB.`hoteis`
 -- -----------------------------------------------------
 CREATE TABLE WalkTourDB.`hoteis` (
-  `hotel_id` INT NOT NULL,
+  `hotel_id` INT NOT NULL AUTO_INCREMENT,
   `hora_checkin` TIME NOT NULL,
   `hora_checkout` TIME NOT NULL,
-  `endereco_id` INT NOT NULL,
+  `endereco_id` INT NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`hotel_id`, `endereco_id`),
   CONSTRAINT `fk_hoteis_enderecos1`
     FOREIGN KEY (`endereco_id`)
@@ -122,10 +122,10 @@ CREATE TABLE WalkTourDB.`hoteis` (
 -- Table WalkTourDB.`detalhes_hospedagem`
 -- -----------------------------------------------------
 CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
-  `id_detalhe_hospedagem` INT NOT NULL,
-  `id_hospedagem` INT NOT NULL,
-  `id_hospede` INT NOT NULL,
-  `num_quarto` INT NOT NULL,
+  `id_detalhe_hospedagem` INT NOT NULL AUTO_INCREMENT,
+  `id_hospedagem` INT NOT NULL AUTO_INCREMENT,
+  `id_hospede` INT NOT NULL AUTO_INCREMENT,
+  `num_quarto` INT NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id_detalhe_hospedagem`, `id_hospedagem`, `id_hospede`, `num_quarto`),
   CONSTRAINT `fk_hospedagens_has_hospedes_hospedagens1`
     FOREIGN KEY (`id_hospedagem`)
