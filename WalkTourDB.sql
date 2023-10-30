@@ -1,13 +1,5 @@
 CREATE DATABASE WalkTourDB;
 USE WalkTourDB;
-
--- -----------------------------------------------------
--- Table WalkTourDB.`table1`
--- -----------------------------------------------------
-CREATE TABLE WalkTourDB.`table1` (
-);
-
-
 -- -----------------------------------------------------
 -- Table WalkTourDB.`enderecos`
 -- -----------------------------------------------------
@@ -46,7 +38,7 @@ CREATE TABLE WalkTourDB.`pontos_tur` (
   `hora_abre` TIME NOT NULL,
   `hora_fecha` TIME NOT NULL,
   `preco` FLOAT NOT NULL,
-  `endereco_id` INT NOT NULL AUTO_INCREMENT,
+  `endereco_id` INT NOT NULL,
   PRIMARY KEY (`ponto_id`, `endereco_id`),
   CONSTRAINT `fk_pontos_tur_enderecos1`
     FOREIGN KEY (`endereco_id`)
@@ -97,7 +89,7 @@ CREATE TABLE WalkTourDB.`quarto` (
   `num_quarto` INT NOT NULL AUTO_INCREMENT,
   `hora_limpeza` TIME NOT NULL,
   `servico_quarto` TINYINT NOT NULL,
-  `tipo_id` INT NOT NULL AUTO_INCREMENT,
+  `tipo_id` INT NOT NULL ,
   PRIMARY KEY (`num_quarto`, `tipo_id`),
   CONSTRAINT `fk_quarto_modelo_quarto1`
     FOREIGN KEY (`tipo_id`)
@@ -111,21 +103,20 @@ CREATE TABLE WalkTourDB.`hoteis` (
   `hotel_id` INT NOT NULL AUTO_INCREMENT,
   `hora_checkin` TIME NOT NULL,
   `hora_checkout` TIME NOT NULL,
-  `endereco_id` INT NOT NULL AUTO_INCREMENT,
+  `endereco_id` INT NOT NULL,
   PRIMARY KEY (`hotel_id`, `endereco_id`),
   CONSTRAINT `fk_hoteis_enderecos1`
     FOREIGN KEY (`endereco_id`)
     REFERENCES WalkTourDB.`enderecos` (`endereco_id`));
 
-
 -- -----------------------------------------------------
 -- Table WalkTourDB.`detalhes_hospedagem`
 -- -----------------------------------------------------
 CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
-  `id_detalhe_hospedagem` INT NOT NULL AUTO_INCREMENT,
-  `id_hospedagem` INT NOT NULL AUTO_INCREMENT,
-  `id_hospede` INT NOT NULL AUTO_INCREMENT,
-  `num_quarto` INT NOT NULL AUTO_INCREMENT,
+  `id_detalhe_hospedagem` INT NOT NULL ,
+  `id_hospedagem` INT NOT NULL ,
+  `id_hospede` INT NOT NULL ,
+  `num_quarto` INT NOT NULL ,
   PRIMARY KEY (`id_detalhe_hospedagem`, `id_hospedagem`, `id_hospede`, `num_quarto`),
   CONSTRAINT `fk_hospedagens_has_hospedes_hospedagens1`
     FOREIGN KEY (`id_hospedagem`)
