@@ -1,4 +1,5 @@
-CREATE DATABASE WalkTourDB;
+DROP DATABASE IF EXISTS WalkTourDB;
+CREATE DATABASE IF NOT EXISTS WalkTourDB;
 USE WalkTourDB;
 -- -----------------------------------------------------
 -- Table WalkTourDB.`enderecos`
@@ -138,7 +139,7 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
     );
 
     
-    
+    /* Nenhuma chave estrangeira */
 	insert into enderecos (cidade, estado, pais, cep) values ('BR', 'GN', 'Brazil', '95335-000');
 	insert into enderecos (cidade, estado, pais, cep) values ('BR', 'CD', 'Brazil', '13315-000');
 	insert into enderecos (cidade, estado, pais, cep) values ('BR', 'YE', 'Brazil', '09700-000');
@@ -160,7 +161,7 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	insert into enderecos (cidade, estado, pais, cep) values ('BR', 'SE', 'Brazil', '68600-000');
 	insert into enderecos (cidade, estado, pais, cep) values ('BR', 'HR', 'Brazil', '38200-000');
 
-
+	/* 1 chave estrangeira */
 	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('6/9/2023', '10/1/2023', '7:28 AM', '4:44 AM', 'Bogan LLC', '$513.52', endereco_id);
 	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('9/19/2023', '1/11/2023', '7:29 AM', '8:37 AM', 'Vandervort, Ward and O''Kon', '$405.95', endereco_id);
 	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('2/21/2023', '5/26/2023', '7:15 AM', '8:03 AM', 'Keeling LLC', '$29.79', endereco_id);
@@ -182,7 +183,7 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('8/6/2023', '7/12/2023', '7:23 AM', '11:20 PM', 'Kunde Inc', '$441.18', endereco_id);
 	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('9/21/2023', '11/16/2022', '7:07 AM', '11:03 PM', 'Hermann-Howell', '$535.89', endereco_id);
     
-    
+    /* 1 chave estrangeira */
 	insert into pontos_tur (hora_abre, hora_fecha, preco, enderec_id) values ('6:05 AM', '8:49 PM', 'R$113.98', endereco_id);
 	insert into pontos_tur (hora_abre, hora_fecha, preco, enderec_id) values ('6:26 AM', '8:11 PM', 'R$37.56', endereco_id);
 	insert into pontos_tur (hora_abre, hora_fecha, preco, enderec_id) values ('6:16 AM', '10:52 PM', 'R$56.51', endereco_id);
@@ -204,7 +205,7 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	insert into pontos_tur (hora_abre, hora_fecha, preco, enderec_id) values ('6:14 AM', '9:09 PM', 'R$81.52', endereco_id);
 	insert into pontos_tur (hora_abre, hora_fecha, preco, enderec_id) values ('6:10 AM', '10:41 PM', 'R$87.33', endereco_id);
     
-    
+    /* Nenhuma chave estrangeira */
 	insert into hospedes (nome, nome_social, dt_nasc, cpf) values ('Gerry', 'Daryl', '16/1/1930', 17672839653);
 	insert into hospedes (nome, nome_social, dt_nasc, cpf) values ('Emmalynne', 'Zeke', '15/3/1987', 91920920872);
 	insert into hospedes (nome, nome_social, dt_nasc, cpf) values ('Blake', 'Brittani', '13/10/1920', 185497552);
@@ -226,7 +227,7 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	insert into hospedes (nome, nome_social, dt_nasc, cpf) values ('Eartha', 'Yoshi', '14/4/1901', 8080951120);
 	insert into hospedes (nome, nome_social, dt_nasc, cpf) values ('Chlo', 'Desmond', '22/7/1935', 39102928415);
     
-    
+    /* Nenhuma chave estrangeira */
 	insert into hospedagens (forma_pag, data_in, data_out, preco) values ('dinheiro', '11/11/2088', '1/12/2046', '$464.24');
 	insert into hospedagens (forma_pag, data_in, data_out, preco) values ('dinheiro', '10/2/2095', '7/13/1909', '$383.5');
 	insert into hospedagens (forma_pag, data_in, data_out, preco) values ('dinheiro', '5/3/1908', '4/17/1927', '$174.28');
@@ -248,7 +249,7 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	insert into hospedagens (forma_pag, data_in, data_out, preco) values ('dinheiro', '11/22/2055', '12/27/1946', '$418.83');
 	insert into hospedagens (forma_pag, data_in, data_out, preco) values ('pix', '7/20/2000', '6/9/2080', '$509.54');
     
-    
+    /* Organizar o resto da tabela */
 	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 2, frigobar, servico_quarto);
 	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 2, frigobar, servico_quarto);
 	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 1, 3, frigobar, servico_quarto);
@@ -270,7 +271,7 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 3, 3, frigobar, servico_quarto);
 	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 1, 3, frigobar, servico_quarto);
     
-    
+    /* 1 chave estrangeira */
 	insert into quarto (hora_limpeza, tipo_id) values ('10:48 AM', tipo_id);
 	insert into quarto (hora_limpeza, tipo_id) values ('5:58 PM', tipo_id);
 	insert into quarto (hora_limpeza, tipo_id) values ('9:46 AM', tipo_id);
@@ -292,7 +293,7 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	insert into quarto (hora_limpeza, tipo_id) values ('6:50 AM', tipo_id);
 	insert into quarto (hora_limpeza, tipo_id) values ('3:13 AM', tipo_id);
     
-    
+    /* 1 chave estrangeira */
 	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (1, '2:57 AM', '7:58 PM', endereco_id);
 	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (2, '3:03 AM', '12:37 AM', endereco_id);
 	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (3, '5:33 PM', '4:31 AM', endereco_id);
@@ -337,6 +338,46 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (20, 20, 20, 5);
     
     
+	UPDATE hoteis
+	set hora_checkin = "11:50 AM", hora_checkout = "17:30 PM"
+	WHERE hotel_id = 1;
+
+	UPDATE hoteis 
+	set hora_checkin = "08:00 PM", hora_checkout = "10:00 AM"
+	WHERE hotel_id = 2;
+	
+	UPDATE hoteis 
+	set hora_checkin = "11:50 PM", hora_checkout = "07:10 AM"
+	WHERE hotel_id = 3;
+	
+	UPDATE hoteis 
+	set hora_checkin = "07:00 PM", hora_checkout = "09:25 AM"
+	WHERE hotel_id = 4;
+	
+	UPDATE hoteis 
+	set hora_checkin = "09:06 PM", hora_checkout = "04:00 AM"
+	WHERE hotel_id = 5;
+	
+	UPDATE hoteis 
+	set hora_checkin = "10:30 PM", hora_checkout = "05:20 PM"
+	WHERE hotel_id = 6;
+	
+	UPDATE hoteis 
+	set hora_checkin = "03:30 PM", hora_checkout = "03:45 AM"
+	WHERE hotel_id = 7;
+	
+	UPDATE hoteis 
+	set hora_checkin = "08:08 AM", hora_checkout = "07:56 AM"
+	WHERE hotel_id = 8;
+	
+	UPDATE hoteis 
+	set hora_checkin = "08:00 AM", hora_checkout = "10:00 PM"
+	WHERE hotel_id = 9;
+	
+	UPDATE hoteis 
+	set hora_checkin = "10:40 AM", hora_checkout = "06:00 PM"
+	WHERE hotel_id = 10;
+
     /*
     UPDATE enderecos
 	SET cidade = 'Campo Grande', estado = 'MS', pais = 'Brasil', cep = 95435-000
