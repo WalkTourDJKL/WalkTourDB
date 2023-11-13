@@ -84,7 +84,7 @@ CREATE TABLE WalkTourDB.`modelo_quarto` (
   `qtd_banheiro` INT NOT NULL,
   `qtd_camas` INT NOT NULL,
   `frigobar` TINYINT NOT NULL,
-  `servico_quarto` TINYINT NOT NULL,
+  `"Sim"o` TINYINT NOT NULL,
   PRIMARY KEY (`tipo_id`));
 
 
@@ -162,26 +162,26 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	insert into enderecos (cidade, estado, pais, cep) values ('BR', 'HR', 'Brazil', '38200-000');
 
 	/* 1 chave estrangeira */
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('6/9/2023', '10/1/2023', '7:28 AM', '4:44 AM', 'Bogan LLC', '$513.52', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('9/19/2023', '1/11/2023', '7:29 AM', '8:37 AM', 'Vandervort, Ward and O''Kon', '$405.95', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('2/21/2023', '5/26/2023', '7:15 AM', '8:03 AM', 'Keeling LLC', '$29.79', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('6/21/2023', '1/27/2023', '7:11 AM', '12:43 AM', 'Dickinson Inc', '$100.95', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('12/29/2022', '12/4/2022', '7:05 AM', '8:25 PM', 'Pfannerstill, Blick and Franecki', '$532.80', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('1/21/2023', '3/29/2023', '7:08 AM', '7:56 AM', 'Schowalter, Mueller and Watsica', '$478.88', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('6/14/2023', '4/30/2023', '7:25 AM', '6:47 PM', 'Friesen and Sons', '$461.64', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('1/15/2023', '11/23/2022', '7:08 AM', '7:51 AM', 'Goldner and Sons', '$398.27', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('3/21/2023', '11/10/2022', '7:11 AM', '5:19 AM', 'Hansen, Hauck and Quitzon', '$105.47', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('4/20/2023', '6/14/2023', '7:17 AM', '8:54 PM', 'Carroll-Thompson', '$549.21', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('10/15/2023', '10/6/2023', '7:20 AM', '2:13 PM', 'Cruickshank, Veum and Howe', '$207.15', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('1/4/2023', '6/8/2023', '7:13 AM', '7:48 PM', 'Bartoletti-Wintheiser', '$148.63', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('7/11/2023', '8/11/2023', '7:21 AM', '8:51 AM', 'Lowe, Christiansen and Ledner', '$363.98', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('2/13/2023', '4/1/2023', '7:16 AM', '1:45 PM', 'Crona Inc', '$262.66', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('10/28/2022', '8/15/2023', '7:02 AM', '11:23 AM', 'Casper Inc', '$297.29', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('9/28/2023', '5/3/2023', '7:22 AM', '4:09 AM', 'Cremin Inc', '$264.03', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('11/20/2022', '12/25/2022', '7:04 AM', '7:15 AM', 'Jast Inc', '$406.40', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('12/11/2022', '2/25/2023', '7:24 AM', '7:39 PM', 'Torphy, Shields and Davis', '$76.38', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('8/6/2023', '7/12/2023', '7:23 AM', '11:20 PM', 'Kunde Inc', '$441.18', endereco_id);
-	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('9/21/2023', '11/16/2022', '7:07 AM', '11:03 PM', 'Hermann-Howell', '$535.89', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('2023-9-6', '2023-1-10', '7:28 AM', '4:44 AM', 'Bogan LLC', '$513.52', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('2023-19-9', '1-11-2023', '7:29 AM', '8:37 AM', 'Vandervort, Ward and O''Kon', '$405.95', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('2-21-2023', '5-26-2023', '7:15 AM', '8:03 AM', 'Keeling LLC', '$29.79', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('6-21-2023', '1-27-2023', '7:11 AM', '12:43 AM', 'Dickinson Inc', '$100.95', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('12-29-2022', '12-4-2022', '7:05 AM', '8:25 PM', 'Pfannerstill, Blick and Franecki', '$532.80', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('1-21-2023', '3-29-2023', '7:08 AM', '7:56 AM', 'Schowalter, Mueller and Watsica', '$478.88', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('6-14-2023', '4-30-2023', '7:25 AM', '6:47 PM', 'Friesen and Sons', '$461.64', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('1-15-2023', '11-23-2022', '7:08 AM', '7:51 AM', 'Goldner and Sons', '$398.27', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('3-21-2023', '11-10-2022', '7:11 AM', '5:19 AM', 'Hansen, Hauck and Quitzon', '$105.47', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('4-20-2023', '6-14-2023', '7:17 AM', '8:54 PM', 'Carroll-Thompson', '$549.21', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('10-15-2023', '10-6-2023', '7:20 AM', '2:13 PM', 'Cruickshank, Veum and Howe', '$207.15', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('1-4-2023', '6-8-2023', '7:13 AM', '7:48 PM', 'Bartoletti-Wintheiser', '$148.63', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('7-11-2023', '8-11-2023', '7:21 AM', '8:51 AM', 'Lowe, Christiansen and Ledner', '$363.98', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('2-13-2023', '4-1-2023', '7:16 AM', '1:45 PM', 'Crona Inc', '$262.66', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('10-28-2022', '8-15-2023', '7:02 AM', '11:23 AM', 'Casper Inc', '$297.29', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('9-28-2023', '5-3-2023', '7:22 AM', '4:09 AM', 'Cremin Inc', '$264.03', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('11-20-2022', '12-25-2022', '7:04 AM', '7:15 AM', 'Jast Inc', '$406.40', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('12-11-2022', '2-25-2023', '7:24 AM', '7:39 PM', 'Torphy, Shields and Davis', '$76.38', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('8-6-2023', '7-12-2023', '7:23 AM', '11:20 PM', 'Kunde Inc', '$441.18', endereco_id);
+	insert into eventos (dia_inicio, dia_fim, hora_inicio, hora_fim, nome_evento, preco, endereco_id) values ('9-21-2023', '11-16-2022', '7:07 AM', '11:03 PM', 'Hermann-Howell', '$535.89', endereco_id);
     
     /* 1 chave estrangeira */
 	insert into pontos_tur (hora_abre, hora_fecha, preco, enderec_id) values ('6:05 AM', '8:49 PM', 'R$113.98', endereco_id);
@@ -250,26 +250,26 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	insert into hospedagens (forma_pag, data_in, data_out, preco) values ('pix', '7/20/2000', '6/9/2080', '$509.54');
     
     /* Organizar o resto da tabela */
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 2, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 2, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 1, 3, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 3, 2, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 1, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 2, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 3, 1, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 1, 2, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 2, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 3, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 1, 3, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 3, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 3, 2, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 2, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 1, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 3, 2, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 3, 2, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 1, 3, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 3, 3, frigobar, servico_quarto);
-	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 1, 3, frigobar, servico_quarto);
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 2, "Sim", "Não");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 2, "Não", "Sim");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 1, 3, "Sim", "Sim");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 3, 2, "Sim", "Não");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 1, "Não", "Sim");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 2, "Sim", "Sim");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 3, 1, "Sim", "Sim");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 1, 2, "Sim", "Não");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 2, "Não", "Sim");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 3, "Sim", "Sim");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 1, 3, "Não", "Não");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 3, "Sim", "Não");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 3, 2, "Sim", "Sim");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 2, "Sim", "Sim");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 2, 1, "Sim", "Sim");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 3, 2, "Sim", "Não");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 3, 2, "Sim", "Sim");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 1, 3, "Não", "Sim");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 3, 3, "Sim", "Não");
+	insert into modelo_quarto (nome_modelo, qtd_banheiro, qtd_camas, frigobar, servico_quarto) values (nome_modelo, 1, 3, "Não", "Sim");
     
     /* 1 chave estrangeira */
 	insert into quarto (hora_limpeza, tipo_id) values ('10:48 AM', tipo_id);
@@ -316,26 +316,26 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (20, '7:03 PM', '11:04 PM', endereco_id);
     
     /* Tabela formada por chaves estrangeiras */
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (1, 1, 1, 4);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (2, 2, 2, 12);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (3, 3, 3, 23);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (4, 4, 4, 20);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (5, 5, 5, 9);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (6, 6, 6, 27);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (7, 7, 7, 1);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (8, 8, 8, 9);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (9, 9, 9, 15);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (10, 10, 10, 4);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (11, 11, 11, 26);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (12, 12, 12, 21);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (13, 13, 13, 7);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (14, 14, 14, 38);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (15, 15, 15, 6);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (16, 16, 16, 37);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (17, 17, 17, 37);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (18, 18, 18, 40);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (19, 19, 19, 38);
-	insert into detalhe_hospedagem (id_detalhe_hospedagem , id_hospedagem, id_hospede, num_quarto) values (20, 20, 20, 5);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (1, 1, 4);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (2, 2, 12);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (3, 3, 23);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (4, 4, 20);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (5, 5, 9);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (6, 6, 27);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (7, 7, 1);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (8, 8, 9);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (9, 9, 15);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (10, 10, 4);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (11, 11, 26);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (12, 12, 21);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (13, 13, 7);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (14, 14, 38);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (15, 15, 6);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (16, 16, 37);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (17, 17, 37);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (18, 18, 40);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (19, 19, 38);
+	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (20, 20, 5);
     
     
 	UPDATE hoteis
