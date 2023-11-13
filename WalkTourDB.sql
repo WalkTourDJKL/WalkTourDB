@@ -378,6 +378,47 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	set hora_checkin = "10:40 AM", hora_checkout = "06:00 PM"
 	WHERE hotel_id = 10;
 
+
+
+	UPDATE hospedes
+	set nome ="Valesca da Silva", nome_social = "Valesca Popozuda", dt_nasc = "2000-02-02", cpf = "11111111111"
+	WHERE id_hospede = 1;
+
+	UPDATE hospedes 
+	set nome ="Kemily Cristina Schmidt de Oliveira", nome_social = NULL, dt_nasc = "2005-01-17", cpf = "11111151111"
+	WHERE id_hospede = 2;
+	
+	UPDATE hospedes 
+	set nome ="Marco Telles", nome_social = NULL, dt_nasc = "1998-10-27", cpf = "11113411111"
+	WHERE id_hospede = 3;
+	
+	UPDATE hospedes 
+	set nome = "Douglas Eduardo Fernandes", nome_social = NULL, dt_nasc = "2005-05-25", cpf = "12842822988"
+	WHERE id_hospede = 4;
+	
+	UPDATE hospedes 
+	set nome ="Jose Paulo Baptista", nome_social = NULL, dt_nasc = "2005-05-09", cpf = "11111111117"
+	WHERE id_hospede = 5;
+	
+	UPDATE hospedes 
+	set nome ="Lucas Guerega", nome_social = NULL, dt_nasc = "2006-11-13", cpf = "18111111111"
+	WHERE id_hospede = 6;
+	
+	UPDATE hospedes 
+	set nome ="Leticia Elizama", nome_social = "Valesca Popozuda", dt_nasc = "2008-04-01", cpf = "11119111111"
+	WHERE id_hospede = 7;
+	
+	UPDATE hospedes 
+	set nome ="Eliza de Venezza Mantins", nome_social = "Sammy", dt_nasc = "1978-12-19", cpf = "11111111167"
+	WHERE id_hospede = 8;
+	
+	UPDATE hospedes 
+	set nome ="Jenifer Cardoso", nome_social = FULL, dt_nasc = "2006-02-23", cpf = "11111114111"
+	WHERE id_hospede = 9;
+	
+	UPDATE hospedes 
+	set nome ="Cleber Viliano de Oliveira", nome_social = NULL, dt_nasc = "2000-02-03", cpf = "34111111111"
+	WHERE id_hospede = 10;
     /*
     UPDATE enderecos
 	SET cidade = 'Campo Grande', estado = 'MS', pais = 'Brasil', cep = 95435-000
