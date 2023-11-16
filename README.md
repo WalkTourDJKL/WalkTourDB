@@ -7,16 +7,16 @@ Database for WalkTour
     </a>
 </h1>
 <p align="Left">
-    Douglas Eduardo Fernandes;
+    👨‍💻Douglas Eduardo Fernandes;
 </p>
 <p align="Left">
-    José Paulo Baptista;
+    👨‍💻José Paulo Baptista;
 </p>
 <p align="Left">
-    Kemily Cristina Schmidt de Oliveira;
+    👩‍💻Kemily Cristina Schmidt de Oliveira;
 </p>
 <p align="Left">
-    Lucas Guerega;
+    💻🐒Lucas Guerega;
 </p>
 <h1 align="center">
     <a>
