@@ -110,5 +110,5 @@ Essa estrutura de banco de dados permite armazenar informações sobre hotéis, 
     </a>
 </h1>
 <p align="Left">
-    
+    *Este banco de dados foi feito no modelo relacional utilizando a linguagem SQL*
 </p>
