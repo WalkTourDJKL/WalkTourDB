@@ -1,6 +1,6 @@
 # WalkTourDB
 Banco de dados para a WalkTour
-    ![ImageOfDataBase](https://github.com/LucasGuerega/WalkTourDB/blob/main/img_der_WalkTourDB.png)Image Of DataBase for WalkTour
+    ![ImageOfDataBase](https://github.com/LucasGuerega/WalkTourDB/blob/main/img_der_WalkTourDB.png)Imagem do vanco de dados para a WalkTour
     <h1 align="center">
     <a>
         Descrição do banco de dados para a WalkTour
