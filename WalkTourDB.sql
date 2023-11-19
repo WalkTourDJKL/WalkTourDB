@@ -428,8 +428,9 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	SET cidade = 'Garuva', estado = 'SC', pais = 'Brasil', cep = 95225-000
 	WHERE endereco_id = 2;   */
 
-        /* Deletes por tabela */
-
+-- -----------------------------------------------------
+-- Deletes em cada tabela da WalkTourDB
+-- -----------------------------------------------------
 
     DELETE * FROM enderecos WHERE endereco_id = 1;
     DELETE * FROM enderecos WHERE endereco_id = 2;
