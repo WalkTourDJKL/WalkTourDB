@@ -429,7 +429,7 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	WHERE endereco_id = 2;   */
 
 -- -----------------------------------------------------
--- Deletes em cada tabela da WalkTourDB
+-- Deletes em cada tabela
 -- -----------------------------------------------------
 
     DELETE * FROM enderecos WHERE endereco_id = 1;
