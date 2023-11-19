@@ -419,14 +419,326 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	UPDATE hospedes 
 	set nome ="Cleber Viliano de Oliveira", nome_social = NULL, dt_nasc = "2000-02-03", cpf = "34111111111"
 	WHERE id_hospede = 10;
-    /*
-    UPDATE enderecos
+  UPDATE enderecos
 	SET cidade = 'Campo Grande', estado = 'MS', pais = 'Brasil', cep = 95435-000
 	WHERE endereco_id = 1;
 
+     	UPDATE enderecos
+	SET cidade = 'Garuva', estado = 'SC', pais = 'Brasil', cep = 92225-000
+	WHERE endereco_id = 2;
+ 
+	 UPDATE enderecos
+	SET cidade = 'Guarapuava', estado = 'PR', pais = 'Brasil', cep = 95425-000
+	WHERE endereco_id = 3; 	
+	
 	UPDATE enderecos
-	SET cidade = 'Garuva', estado = 'SC', pais = 'Brasil', cep = 95225-000
-	WHERE endereco_id = 2;   */
+	SET cidade = 'Florianópolis', estado = 'SC', pais = 'Brasil', cep = 95495-000
+	WHERE endereco_id = 4;
+
+	UPDATE enderecos
+	SET cidade = 'Brusque', estado = 'SC', pais = 'Brasil', cep = 95295-000
+	WHERE endereco_id = 5;
+	
+	UPDATE enderecos
+	SET cidade = ' Ibicaré', estado = 'SC', pais = 'Brasil', cep = 95095-000
+	WHERE endereco_id = 6;
+
+	UPDATE enderecos
+	SET cidade = 'Urupema', estado = 'SC', pais = 'Brasil', cep = 98595-000
+	WHERE endereco_id = 7;
+
+	UPDATE enderecos
+	SET cidade = 'Gravataí', estado = 'RS', pais = 'Brasil', cep = 95291-000
+	WHERE endereco_id = 8;
+
+	UPDATE enderecos
+	SET cidade = 'Vacaria', estado = 'RS', pais = 'Brasil', cep = 19295-000
+	WHERE endereco_id = 9;
+	
+	UPDATE enderecos
+	SET cidade = 'Cachoeira do Sul', estado = 'RS', pais = 'Brasil', cep = 19895-000
+	WHERE endereco_id = 10;
+
+
+	UPDATE eventos
+	SET nome_evento = 'Show de Ras Bernardo', dia_inicio = '2023/11/18', dia_fim = '2023/11/19', hora_inicio = "10:30 PM",  hora_fim = '23:00 AM' , preco = '120.00' , 
+	WHERE endereco_id = 1;
+	
+	UPDATE eventos
+	SET nome_evento = 'Festival de Moquecas', dia_inicio = '2023/09/22', dia_fim = '2023/10/01', hora_inicio = "10:30 PM",  hora_fim = '23:00 AM' , preco = NULL, 
+	WHERE endereco_id = 2;
+
+	UPDATE eventos
+	SET nome_evento = 'Festival de Cinema, dia_inicio = '2023/09/09', dia_fim = '2023/10/01', hora_inicio = "10:30 PM",  hora_fim = '23:00 AM' , preco = NULL, 
+	WHERE endereco_id = 3;
+
+	UPDATE eventos
+	SET nome_evento = 'Show Irmãs Marias', dia_inicio = '2024/09/22', dia_fim = '2024/10/01', hora_inicio = "10:30 PM",  hora_fim = '23:00 AM' , preco = '200.00', 
+	WHERE endereco_id = 4;
+
+	UPDATE eventos
+	SET nome_evento = 'Multshow', dia_inicio = '2023/07/22', dia_fim = '2023/09/01', hora_inicio = "10:30 PM",  hora_fim = '23:00 AM' , preco = "80.00", 
+	WHERE endereco_id = 5;
+
+	UPDATE eventos
+	SET nome_evento = 'YouCom', dia_inicio = '2023/09/10', dia_fim = '2023/10/20', hora_inicio = "10:30 PM",  hora_fim = '23:00 AM' , preco = '20.00', 
+	WHERE endereco_id = 6;
+
+	UPDATE eventos
+	SET nome_evento = 'Verdant', dia_inicio = '2025/09/22', dia_fim = '2025/10/01', hora_inicio = "10:30 PM",  hora_fim = '23:00 AM' , preco = '45.00', 
+	WHERE endereco_id = 7;
+	
+	UPDATE eventos
+	SET nome_evento = 'Show de bandas', dia_inicio = '2025/09/22', dia_fim = '2025/10/01', hora_inicio = "10:30 PM",  hora_fim = '23:00 AM' , preco = '89.90', 
+	WHERE endereco_id = 8;
+
+	UPDATE eventos
+	SET nome_evento = 'Teatro', dia_inicio = '2023/12/22', dia_fim = '2023/12/22', hora_inicio = "10:30 PM",  hora_fim = '12:00 AM' , preco = NULL, 
+	WHERE endereco_id = 9;
+
+	UPDATE eventos
+	SET nome_evento = 'Tudum', dia_inicio = '2023/11/22', dia_fim = '2023/11/29', hora_inicio = "10:00 PM",  hora_fim = '20:00 AM' , preco = NULL, 
+	WHERE endereco_id = 10;
+
+	 	
+
+
+UPDATE pontos_tur
+	SET hora_abre =  ,hora_fecha = ,  preco = ,
+	WHERE endereco_id = 1;
+
+
+UPDATE pontos_tur
+SET hora_abre = '09:00', hora_fecha = '18:00', preco = '25.99'
+WHERE endereco_id = 1;
+
+UPDATE pontos_tur
+SET hora_abre = '10:30', hora_fecha = '20:00', preco = '30.50'
+WHERE endereco_id = 1;
+
+UPDATE pontos_tur
+SET hora_abre = '08:00', hora_fecha = '17:30', preco = '22.75'
+WHERE endereco_id = 1;
+
+UPDATE pontos_tur
+SET hora_abre = '11:00', hora_fecha = '19:30', preco = '28.00'
+WHERE endereco_id = 2;
+
+UPDATE pontos_tur
+SET hora_abre = '09:30', hora_fecha = '18:30', preco = '26.50'
+WHERE endereco_id = 3;
+
+UPDATE pontos_tur
+SET hora_abre = '10:00', hora_fecha = '20:30', preco = '32.00'
+WHERE endereco_id = 4;
+
+UPDATE pontos_tur
+SET hora_abre = '08:30', hora_fecha = '17:00', preco = '24.99'
+WHERE endereco_id = 5;
+
+UPDATE pontos_tur
+SET hora_abre = '11:30', hora_fecha = '19:00', preco = '29.75'
+WHERE endereco_id = 6;
+
+UPDATE pontos_tur
+SET hora_abre = '09:45', hora_fecha = '18:45', preco = '27.50'
+WHERE endereco_id = 7;
+
+UPDATE pontos_tur
+SET hora_abre = '10:15', hora_fecha = '20:15', preco = '31.00'
+WHERE endereco_id = 8;
+
+UPDATE pontos_tur
+SET hora_abre = '09:15', hora_fecha = '18:15', preco = '28.50'
+WHERE endereco_id = 9;
+
+UPDATE pontos_tur
+SET hora_abre = '10:45', hora_fecha = '20:45', preco = '33.50'
+WHERE endereco_id = 10;
+
+
+UPDATE hospedagens 
+SET forma_pag=  , data_in = , data_ou = , preco= , 
+WHERE endereco_id = ;
+
+UPDATE hospedagens
+SET forma_pag = 'Cartão de Crédito', data_in = '2023-12-01', data_out = '2023-12-05', preco = 150.50
+WHERE hospedes_id = 1;
+
+UPDATE hospedagens
+SET forma_pag = 'Boleto Bancário', data_in = '2023-11-15', data_out = '2023-11-20', preco = 120.75
+WHERE hospedes_id = 2;
+
+UPDATE hospedagens
+SET forma_pag = 'Transferência Bancária', data_in = '2023-11-25', data_out = '2023-11-30', preco = 180.00
+WHERE hospedes_id = 3;
+
+UPDATE hospedagens
+SET forma_pag = 'Dinheiro', data_in = '2023-12-10', data_out = '2023-12-15', preco = 200.25
+WHERE hospedes_id = 4;
+
+UPDATE hospedagens
+SET forma_pag = 'Pix', data_in = '2023-12-05', data_out = '2023-12-10', preco = 160.50
+WHERE hospedes_id = 5;
+
+UPDATE hospedagens
+SET forma_pag = 'Cartão de Débito', data_in = '2023-11-20', data_out = '2023-11-25', preco = 130.00
+WHERE hospedes_id = 6;
+
+UPDATE hospedagens
+SET forma_pag = 'Cheque', data_in = '2023-11-30', data_out = '2023-12-05', preco = 170.75
+WHERE hospedes_id = 7;
+
+UPDATE hospedagens
+SET forma_pag = 'Cartão de Crédito', data_in = '2023-12-15', data_out = '2023-12-20', preco = 190.50
+WHERE hospedes_id = 8;
+
+UPDATE hospedagens
+SET forma_pag = 'Cartão de Crédito', data_in = '2023-12-20', data_out = '2023-12-25', preco = 220.00
+WHERE hospedes_id = 9;
+
+UPDATE hospedagens
+SET forma_pag = 'Cartão de Crédito', data_in = '2023-11-10', data_out = '2023-11-15', preco = 140.25
+WHERE hospedes_id = 10;
+
+
+
+UPDATE modelo_quarto
+SET nome_modelo = 'Standard', qtd_banheiro = 1, qtd_camas = 2, frigobar = 'Sim', servico_quarto = 'Não'
+WHERE modelo_id = 1;
+
+UPDATE modelo_quarto
+SET nome_modelo = 'Deluxe', qtd_banheiro = 2, qtd_camas = 3, frigobar = 'Sim', servico_quarto = 'Sim'
+WHERE modelo_id = 2;
+
+UPDATE modelo_quarto
+SET nome_modelo = 'Suite Executiva', qtd_banheiro = 2, qtd_camas = 4, frigobar = 'Sim', servico_quarto = 'Sim'
+WHERE modelo_id = 3;
+
+UPDATE modelo_quarto
+SET nome_modelo = 'Econômico', qtd_banheiro = 1, qtd_camas = 1, frigobar = 'Não', servico_quarto = 'Não'
+WHERE modelo_id = 4;
+
+UPDATE modelo_quarto
+SET nome_modelo = 'Luxo', qtd_banheiro = 3, qtd_camas = 5, frigobar = 'Sim', servico_quarto = 'Sim'
+WHERE modelo_id = 5;
+
+UPDATE modelo_quarto
+SET nome_modelo = 'Suíte Presidencial', qtd_banheiro = 4, qtd_camas = 6, frigobar = 'Sim', servico_quarto = 'Sim'
+WHERE modelo_id = 6;
+
+UPDATE modelo_quarto
+SET nome_modelo = 'Standard', qtd_banheiro = 1, qtd_camas = 2, frigobar = 'Sim', servico_quarto = 'Não'
+WHERE modelo_id = 7;
+
+UPDATE modelo_quarto
+SET nome_modelo = 'Deluxe', qtd_banheiro = 2, qtd_camas = 3, frigobar = 'Sim', servico_quarto = 'Sim'
+WHERE modelo_id = 8;
+
+UPDATE modelo_quarto
+SET nome_modelo = 'Suite Executiva', qtd_banheiro = 2, qtd_camas = 4, frigobar = 'Sim', servico_quarto = 'Sim'
+WHERE modelo_id = 9;
+
+UPDATE modelo_quarto
+SET nome_modelo = 'Econômico', qtd_banheiro = 1, qtd_camas = 1, frigobar = 'Não', servico_quarto = 'Não'
+WHERE modelo_id = 10;
+
+
+
+
+UPDATE quarto
+SET hora_limpeza = '10:00'
+WHERE tipo_id = 1;
+
+UPDATE quarto
+SET hora_limpeza = '11:30'
+WHERE tipo_id = 2;
+
+UPDATE quarto
+SET hora_limpeza = '14:00'
+WHERE tipo_id = 3;
+
+UPDATE quarto
+SET hora_limpeza = '12:45'
+WHERE tipo_id = 4;
+
+UPDATE quarto
+SET hora_limpeza = '15:30'
+WHERE tipo_id = 5;
+
+UPDATE quarto
+SET hora_limpeza = '09:15'
+WHERE tipo_id = 6;
+
+UPDATE quarto
+SET hora_limpeza = '13:00'
+WHERE tipo_id = 7;
+
+UPDATE quarto
+SET hora_limpeza = '16:45'
+WHERE tipo_id = 8;
+
+UPDATE quarto
+SET hora_limpeza = '10:30'
+WHERE tipo_id = 9;
+
+UPDATE quarto
+SET hora_limpeza = '14:30'
+WHERE tipo_id = 10;
+
+
+
+UPDATE detalhes_hospedagem
+SET id_hospede = 1, num_quarto = 101
+WHERE id_hospedagem = 1;
+
+
+UPDATE detalhes_hospedagem
+SET id_hospede = 2, num_quarto = 202
+WHERE id_hospedagem = 2;
+
+
+UPDATE detalhes_hospedagem
+SET id_hospede = 3, num_quarto = 303
+WHERE id_hospedagem = 3;
+
+
+UPDATE detalhes_hospedagem
+SET id_hospede = 4, num_quarto = 104
+WHERE id_hospedagem = 4;
+
+
+UPDATE detalhes_hospedagem
+SET id_hospede = 5, num_quarto = 205
+WHERE id_hospedagem = 5;
+
+
+UPDATE detalhes_hospedagem
+SET id_hospede = 6, num_quarto = 306
+WHERE id_hospedagem = 6;
+
+
+UPDATE detalhes_hospedagem
+SET id_hospede = 7, num_quarto = 107
+WHERE id_hospedagem = 7;
+
+
+UPDATE detalhes_hospedagem
+SET id_hospede = 8, num_quarto = 208
+WHERE id_hospedagem = 8;
+
+
+UPDATE detalhes_hospedagem
+SET id_hospede = 9, num_quarto = 309
+WHERE id_hospedagem = 9;
+
+
+UPDATE detalhes_hospedagem
+SET id_hospede = 10, num_quarto = 110
+WHERE id_hospedagem = 10;
+
+
+
 
 -- -----------------------------------------------------
 -- Deletes em cada tabela
