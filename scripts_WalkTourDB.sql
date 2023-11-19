@@ -294,26 +294,26 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	insert into quarto (hora_limpeza, tipo_id) values ('3:13 AM', tipo_id);
     
     /* 1 chave estrangeira */
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (1, '2:57 AM', '7:58 PM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (2, '3:03 AM', '12:37 AM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (3, '5:33 PM', '4:31 AM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (4, '6:04 AM', '5:13 PM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (5, '12:43 AM', '1:45 PM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (6, '9:41 AM', '3:57 PM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (7, '7:32 AM', '9:03 PM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (8, '4:11 PM', '4:13 AM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (9, '7:45 PM', '10:27 AM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (10, '6:52 PM', '11:51 PM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (11, '10:05 PM', '12:04 PM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (12, '11:40 AM', '9:06 AM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (13, '6:40 AM', '5:27 AM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (14, '3:23 AM', '5:16 PM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (15, '9:08 AM', '6:30 AM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (16, '11:18 AM', '12:19 AM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (17, '9:39 AM', '11:57 AM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (18, '2:14 AM', '2:31 AM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (19, '5:00 AM', '4:14 PM', endereco_id);
-	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (20, '7:03 PM', '11:04 PM', endereco_id);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (1, '2:57 AM', '7:58 PM', 1);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (2, '3:03 AM', '12:37 AM', 2);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (3, '5:33 PM', '4:31 AM', 3);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (4, '6:04 AM', '5:13 PM', 4);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (5, '12:43 AM', '1:45 PM', 5);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (6, '9:41 AM', '3:57 PM', 6);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (7, '7:32 AM', '9:03 PM', 7);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (8, '4:11 PM', '4:13 AM', 8);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (9, '7:45 PM', '10:27 AM', 9);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (10, '6:52 PM', '11:51 PM', 10);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (11, '10:05 PM', '12:04 PM', 11);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (12, '11:40 AM', '9:06 AM', 12);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (13, '6:40 AM', '5:27 AM', 13);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (14, '3:23 AM', '5:16 PM', 14);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (15, '9:08 AM', '6:30 AM', 15);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (16, '11:18 AM', '12:19 AM', 16);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (17, '9:39 AM', '11:57 AM', 17);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (18, '2:14 AM', '2:31 AM', 18);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (19, '5:00 AM', '4:14 PM', 19);
+	insert into hoteis (hora_checkin, hora_checkout, endereco_id) values (20, '7:03 PM', '11:04 PM', 20);
     
     /* Tabela formada por chaves estrangeiras */
 	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (1, 1, 4);
@@ -336,6 +336,27 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (18, 18, 40);
 	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (19, 19, 38);
 	insert into detalhe_hospedagem (id_hospedagem, id_hospede, num_quarto) values (20, 20, 5);
+    
+    
+    SELECT COUNT(*) FROM enderecos;
+    SELECT COUNT(*) FROM eventos;
+    SELECT COUNT(*) FROM pontos_tur;
+    SELECT COUNT(*) FROM hospedes;
+    SELECT COUNT(*) FROM hospedagens;
+    SELECT COUNT(*) FROM modelo_quarto;
+    SELECT COUNT(*) FROM quarto;
+    SELECT COUNT(*) FROM hoteis;
+    SELECT COUNT(*) FROM detalhe_hospedagem;
+    
+    SELECT * FROM enderecos ORDER BY endereco_id;
+    SELECT * FROM eventos ORDER BY id_evento;
+    SELECT * FROM pontos_tur ORDER BY ponto_id;
+    SELECT * FROM hospedes ORDER BY id_hospede;
+    SELECT * FROM hospedagens ORDER BY id_hospedagem;
+    SELECT * FROM modelo_quarto ORDER BY tipo_id;
+    SELECT * FROM quarto ORDER BY num_quarto;
+    SELECT * FROM hoteis ORDER BY hotel_id;
+    SELECT * FROM detalhe_hospedagem ORDER BY id_detalhe_hospedagem;
     
     
 	UPDATE hoteis
@@ -502,19 +523,6 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 
 	 	
 
-
-UPDATE pontos_tur
-	SET hora_abre =  ,hora_fecha = ,  preco = ,
-	WHERE endereco_id = 1;
-
-
-UPDATE pontos_tur
-SET hora_abre = '09:00', hora_fecha = '18:00', preco = '25.99'
-WHERE endereco_id = 1;
-
-UPDATE pontos_tur
-SET hora_abre = '10:30', hora_fecha = '20:00', preco = '30.50'
-WHERE endereco_id = 1;
 
 UPDATE pontos_tur
 SET hora_abre = '08:00', hora_fecha = '17:30', preco = '22.75'
@@ -736,8 +744,6 @@ WHERE id_hospedagem = 9;
 UPDATE detalhes_hospedagem
 SET id_hospede = 10, num_quarto = 110
 WHERE id_hospedagem = 10;
-
-
 
 
 -- -----------------------------------------------------
