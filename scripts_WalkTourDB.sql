@@ -469,7 +469,7 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	WHERE endereco_id = 2;
 
 	UPDATE eventos
-	SET nome_evento = 'Festival de Cinema, dia_inicio = '2023/09/09', dia_fim = '2023/10/01', hora_inicio = "10:30 PM",  hora_fim = '23:00 AM' , preco = NULL, 
+	SET nome_evento = 'Festival de Cinema', dia_inicio = '2023/09/09', dia_fim = '2023/10/01', hora_inicio = "10:30 PM",  hora_fim = '23:00 AM' , preco = NULL, 
 	WHERE endereco_id = 3;
 
 	UPDATE eventos
