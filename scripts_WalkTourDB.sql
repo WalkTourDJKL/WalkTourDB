@@ -779,11 +779,11 @@ WHERE id_hospedagem = 10;
     DELETE FROM hospedagens WHERE id_hospedagem = 20;
 
 
-    DELETE * FROM modelo_quarto WHERE tipo_id = 1;
-    DELETE * FROM modelo_quarto WHERE tipo_id = 17;
-    DELETE * FROM modelo_quarto WHERE tipo_id = 18;
-    DELETE * FROM modelo_quarto WHERE tipo_id = 19;
-    DELETE * FROM modelo_quarto WHERE tipo_id = 20;
+    DELETE FROM modelo_quarto WHERE tipo_id = 1;
+    DELETE FROM modelo_quarto WHERE tipo_id = 17;
+    DELETE FROM modelo_quarto WHERE tipo_id = 18;
+    DELETE FROM modelo_quarto WHERE tipo_id = 19;
+    DELETE FROM modelo_quarto WHERE tipo_id = 20;
 
 
     DELETE FROM quarto WHERE num_quarto = 1;
