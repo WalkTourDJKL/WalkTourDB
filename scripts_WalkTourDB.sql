@@ -744,11 +744,11 @@ WHERE id_hospedagem = 10;
 -- Deletes em cada tabela
 -- -----------------------------------------------------
 
-    DELETE * FROM enderecos WHERE endereco_id = 1;
-    DELETE * FROM enderecos WHERE endereco_id = 2;
-    DELETE * FROM enderecos WHERE endereco_id = 3;
-    DELETE * FROM enderecos WHERE endereco_id = 4;
-    DELETE * FROM enderecos WHERE endereco_id = 5;
+    DELETE FROM enderecos WHERE endereco_id = 1;
+    DELETE FROM enderecos WHERE endereco_id = 2;
+    DELETE FROM enderecos WHERE endereco_id = 3;
+    DELETE FROM enderecos WHERE endereco_id = 4;
+    DELETE FROM enderecos WHERE endereco_id = 5;
 
 
     DELETE * FROM eventos WHERE id_evento = 16;
@@ -765,18 +765,18 @@ WHERE id_hospedagem = 10;
     DELETE * FROM pontos_tur WHERE ponto_id = 3;
 
 
-    DELETE * FROM hospedes WHERE id_hospede = 20;
-    DELETE * FROM hospedes WHERE id_hospede = 19;
-    DELETE * FROM hospedes WHERE id_hospede = 16;
-    DELETE * FROM hospedes WHERE id_hospede = 17;
-    DELETE * FROM hospedes WHERE id_hospede = 18;
+    DELETE FROM hospedes WHERE id_hospede = 20;
+    DELETE FROM hospedes WHERE id_hospede = 19;
+    DELETE FROM hospedes WHERE id_hospede = 16;
+    DELETE FROM hospedes WHERE id_hospede = 17;
+    DELETE FROM hospedes WHERE id_hospede = 18;
 
 
-    DELETE * FROM hospedagens WHERE id_hospedagem = 1;
-    DELETE * FROM hospedagens WHERE id_hospedagem = 2;
-    DELETE * FROM hospedagens WHERE id_hospedagem = 3;
-    DELETE * FROM hospedagens WHERE id_hospedagem = 4;
-    DELETE * FROM hospedagens WHERE id_hospedagem = 20;
+    DELETE FROM hospedagens WHERE id_hospedagem = 1;
+    DELETE FROM hospedagens WHERE id_hospedagem = 2;
+    DELETE FROM hospedagens WHERE id_hospedagem = 3;
+    DELETE FROM hospedagens WHERE id_hospedagem = 4;
+    DELETE FROM hospedagens WHERE id_hospedagem = 20;
 
 
     DELETE * FROM modelo_quarto WHERE tipo_id = 1;
@@ -786,22 +786,22 @@ WHERE id_hospedagem = 10;
     DELETE * FROM modelo_quarto WHERE tipo_id = 20;
 
 
-    DELETE * FROM quarto WHERE num_quarto = 1;
-    DELETE * FROM quarto WHERE num_quarto = 2;
-    DELETE * FROM quarto WHERE num_quarto = 16;
-    DELETE * FROM quarto WHERE num_quarto = 17;
-    DELETE * FROM quarto WHERE num_quarto = 5;
+    DELETE FROM quarto WHERE num_quarto = 1;
+    DELETE FROM quarto WHERE num_quarto = 2;
+    DELETE FROM quarto WHERE num_quarto = 16;
+    DELETE FROM quarto WHERE num_quarto = 17;
+    DELETE FROM quarto WHERE num_quarto = 5;
 
 
-    DELETE * FROM hoteis WHERE hotel_id = 1;
-    DELETE * FROM hoteis WHERE hotel_id = 2;
-    DELETE * FROM hoteis WHERE hotel_id = 3;
-    DELETE * FROM hoteis WHERE hotel_id = 4;
-    DELETE * FROM hoteis WHERE hotel_id = 5;
+    DELETE FROM hoteis WHERE hotel_id = 1;
+    DELETE FROM hoteis WHERE hotel_id = 2;
+    DELETE FROM hoteis WHERE hotel_id = 3;
+    DELETE FROM hoteis WHERE hotel_id = 4;
+    DELETE FROM hoteis WHERE hotel_id = 5;
 
 
-    DELETE * FROM detalhes_hospedagem WHERE id_detalhe_hospedagem = 16;
-    DELETE * FROM detalhes_hospedagem WHERE id_detalhe_hospedagem = 17;
-    DELETE * FROM detalhes_hospedagem WHERE id_detalhe_hospedagem = 18;
-    DELETE * FROM detalhes_hospedagem WHERE id_detalhe_hospedagem = 19;
-    DELETE * FROM detalhes_hospedagem WHERE id_detalhe_hospedagem = 20;
+    DELETE FROM detalhes_hospedagem WHERE id_detalhe_hospedagem = 16;
+    DELETE FROM detalhes_hospedagem WHERE id_detalhe_hospedagem = 17;
+    DELETE FROM detalhes_hospedagem WHERE id_detalhe_hospedagem = 18;
+    DELETE FROM detalhes_hospedagem WHERE id_detalhe_hospedagem = 19;
+    DELETE FROM detalhes_hospedagem WHERE id_detalhe_hospedagem = 20;
