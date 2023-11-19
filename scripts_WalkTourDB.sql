@@ -751,18 +751,18 @@ WHERE id_hospedagem = 10;
     DELETE FROM enderecos WHERE endereco_id = 5;
 
 
-    DELETE * FROM eventos WHERE id_evento = 16;
-    DELETE * FROM eventos WHERE id_evento = 17;
-    DELETE * FROM eventos WHERE id_evento = 19;
-    DELETE * FROM eventos WHERE id_evento = 18;
-    DELETE * FROM eventos WHERE id_evento = 20;
+    DELETE FROM eventos WHERE id_evento = 16;
+    DELETE FROM eventos WHERE id_evento = 17;
+    DELETE FROM eventos WHERE id_evento = 19;
+    DELETE FROM eventos WHERE id_evento = 18;
+    DELETE FROM eventos WHERE id_evento = 20;
 
 
-    DELETE * FROM pontos_tur WHERE ponto_id = 1;
-    DELETE * FROM pontos_tur WHERE ponto_id = 2;
-    DELETE * FROM pontos_tur WHERE ponto_id = 16;
-    DELETE * FROM pontos_tur WHERE ponto_id = 17;
-    DELETE * FROM pontos_tur WHERE ponto_id = 3;
+    DELETE FROM pontos_tur WHERE ponto_id = 1;
+    DELETE FROM pontos_tur WHERE ponto_id = 2;
+    DELETE FROM pontos_tur WHERE ponto_id = 16;
+    DELETE FROM pontos_tur WHERE ponto_id = 17;
+    DELETE FROM pontos_tur WHERE ponto_id = 3;
 
 
     DELETE FROM hospedes WHERE id_hospede = 20;
