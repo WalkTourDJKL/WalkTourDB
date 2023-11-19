@@ -427,3 +427,68 @@ CREATE TABLE WalkTourDB.`detalhes_hospedagem` (
 	UPDATE enderecos
 	SET cidade = 'Garuva', estado = 'SC', pais = 'Brasil', cep = 95225-000
 	WHERE endereco_id = 2;   */
+
+        /* Deletes por tabela */
+
+
+    DELETE * FROM enderecos WHERE endereco_id = 1;
+    DELETE * FROM enderecos WHERE endereco_id = 2;
+    DELETE * FROM enderecos WHERE endereco_id = 3;
+    DELETE * FROM enderecos WHERE endereco_id = 4;
+    DELETE * FROM enderecos WHERE endereco_id = 5;
+
+
+    DELETE * FROM eventos WHERE id_evento = 16;
+    DELETE * FROM eventos WHERE id_evento = 17;
+    DELETE * FROM eventos WHERE id_evento = 19;
+    DELETE * FROM eventos WHERE id_evento = 18;
+    DELETE * FROM eventos WHERE id_evento = 20;
+
+
+    DELETE * FROM pontos_tur WHERE ponto_id = 1;
+    DELETE * FROM pontos_tur WHERE ponto_id = 2;
+    DELETE * FROM pontos_tur WHERE ponto_id = 16;
+    DELETE * FROM pontos_tur WHERE ponto_id = 17;
+    DELETE * FROM pontos_tur WHERE ponto_id = 3;
+
+
+    DELETE * FROM hospedes WHERE id_hospede = 20;
+    DELETE * FROM hospedes WHERE id_hospede = 19;
+    DELETE * FROM hospedes WHERE id_hospede = 16;
+    DELETE * FROM hospedes WHERE id_hospede = 17;
+    DELETE * FROM hospedes WHERE id_hospede = 18;
+
+
+    DELETE * FROM hospedagens WHERE id_hospedagem = 1;
+    DELETE * FROM hospedagens WHERE id_hospedagem = 2;
+    DELETE * FROM hospedagens WHERE id_hospedagem = 3;
+    DELETE * FROM hospedagens WHERE id_hospedagem = 4;
+    DELETE * FROM hospedagens WHERE id_hospedagem = 20;
+
+
+    DELETE * FROM modelo_quarto WHERE tipo_id = 1;
+    DELETE * FROM modelo_quarto WHERE tipo_id = 17;
+    DELETE * FROM modelo_quarto WHERE tipo_id = 18;
+    DELETE * FROM modelo_quarto WHERE tipo_id = 19;
+    DELETE * FROM modelo_quarto WHERE tipo_id = 20;
+
+
+    DELETE * FROM quarto WHERE num_quarto = 1;
+    DELETE * FROM quarto WHERE num_quarto = 2;
+    DELETE * FROM quarto WHERE num_quarto = 16;
+    DELETE * FROM quarto WHERE num_quarto = 17;
+    DELETE * FROM quarto WHERE num_quarto = 5;
+
+
+    DELETE * FROM hoteis WHERE hotel_id = 1;
+    DELETE * FROM hoteis WHERE hotel_id = 2;
+    DELETE * FROM hoteis WHERE hotel_id = 3;
+    DELETE * FROM hoteis WHERE hotel_id = 4;
+    DELETE * FROM hoteis WHERE hotel_id = 5;
+
+
+    DELETE * FROM detalhes_hospedagem WHERE id_detalhe_hospedagem = 16;
+    DELETE * FROM detalhes_hospedagem WHERE id_detalhe_hospedagem = 17;
+    DELETE * FROM detalhes_hospedagem WHERE id_detalhe_hospedagem = 18;
+    DELETE * FROM detalhes_hospedagem WHERE id_detalhe_hospedagem = 19;
+    DELETE * FROM detalhes_hospedagem WHERE id_detalhe_hospedagem = 20;
