@@ -1,4 +1,5 @@
 Banco de dados para a sistema da WalkTour
+    ![WalkTour](https://github.com/WalkTourDJKL/WalkTourDB/blob/main/logo.png)
     ![Em Desenvolvimento](https://img.shields.io/badge/Status-Em%20Desenvolvimento-blue)
     ![ImageOfDataBase](https://github.com/LucasGuerega/WalkTourDB/blob/main/img_der_WalkTourDB.png)Imagem do banco de dados para a WalkTour
 ## 📚 Descrição do banco de dados para a WalkTour
