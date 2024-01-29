@@ -83,6 +83,7 @@ A tabela PontoTuristico e Evento possuem uma relação de composição com Ender
 Essa estrutura de banco de dados permite armazenar informações sobre hotéis, clientes, reservas, quartos, modelos de quartos, pontos turísticos, eventos e endereços, facilitando a gestão de um sistema de hotelaria e turismo. As relações entre as tabelas refletem a associação lógica entre os diferentes elementos do sistema.
 </p>
 </p>
+
 ![ImageOfDataBase](https://github.com/LucasGuerega/WalkTourDB/blob/main/img_der_WalkTourDB.png)Imagem do banco de dados para a WalkTour
 <h1 align="center">
     <a>
