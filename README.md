@@ -84,7 +84,7 @@ Essa estrutura de banco de dados permite armazenar informações sobre hotéis, 
 </p>
 </p>
 
-![ImageOfDataBase](https://github.com/LucasGuerega/WalkTourDB/blob/main/img_der_WalkTourDB.png)Imagem do banco de dados para a WalkTour
+![ImageOfDataBase]([https://github.com/LucasGuerega/WalkTourDB/blob/main/img_der_WalkTourDB.png](https://raw.githubusercontent.com/WalkTourDJKL/WalkTourDB/main/img_der_WalkTourDB.png))Imagem do banco de dados para a WalkTour
 <h1 align="center">
     <a>
         Participantes
